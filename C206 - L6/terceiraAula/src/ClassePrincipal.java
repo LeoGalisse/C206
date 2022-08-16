@@ -1,5 +1,3 @@
-import javax.swing.plaf.BorderUIResource;
-
 public class ClassePrincipal {
     public static void main(String[] args) {
         Carrinho cart = new Carrinho();
@@ -15,6 +13,8 @@ public class ClassePrincipal {
         System.out.println("Total da compra: " + cart.calculaTotal());
 
         Empresa emp = new Empresa();
+        emp.CNPJ = "12345678";
+        emp.endereco = "Rua Inatel";
 
         emp.contatos = new Contato[5];
 
@@ -25,6 +25,9 @@ public class ClassePrincipal {
         emp.exibirInfo();
 
         Restaurante res = new Restaurante();
+        res.CNPJ = "124354543";
+        res.nome = "Toca";
+        res.endereco = "Avenida do Inatel";
 
         res.fornecedores = new Fornecedor[5];
 
